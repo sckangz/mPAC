@@ -33,8 +33,8 @@ for i=1:length(para1)
     for j=1:length(para2)
         for k=1:length(para3)
             [result,FVret,obj,Wv]=UMVSC(data,label,B,para1(i),para2(j),para3(k),FV,SV,LV);
-            dlmwrite('result.txt',[para1(i) para2(j) para3(k) result(1) result(2) result(3) result(4) result(5) result(6)],'-append','delimiter','\t','newline','pc');
+            dlmwrite('result.txt',[para1(i) para2(j) para3(k) result(1) result(2) result(3) result(4) result(5)],'-append','delimiter','\t','newline','pc');
         end
     end
 end
-      %result = [Fscore Precision Recall nmi AR Entropy]  
+      %result = [Fscore Precision Recall nmi AR]  
